@@ -14,7 +14,7 @@ class Audio extends CI_Controller {
     public function index()
     {
         $data = array(
-			'title' => "Upload Audio Bell",
+			'title' => "Upload Audio Bell punya dady",
             'audio' => $this->audio_model->get_all(),
             'jadwal_hari' => $this->jadwal_model->get_hari()
 		);
