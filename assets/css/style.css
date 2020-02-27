@@ -1256,8 +1256,8 @@ select.form-control:not([size]):not([multiple]) {
 }
 .table:not(.table-sm) thead th {
 	border-bottom: none;
-	background-color: rgba(0, 0, 0, 0.04);
-	color: #666;
+	background-color: #2274b0;
+	color: white;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }

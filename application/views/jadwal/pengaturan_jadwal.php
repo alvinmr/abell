@@ -92,7 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<?= form_open_multipart('pengaturan_jadwal/addjadwal'); ?>
 			<div class="modal-body">
 				<div class="form-group">					
-                    <div class="section-title">Hari</div>
+                    <div class=" ">Hari</div>
                     <select class="form-control select2" name="hari">
                         <?php foreach($hari as $h): ?>
                         <option value="<?= $h['id'] ?>"><?= $h['hari'] ?></option>
@@ -100,7 +100,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </select>										                                        
                 </div>
                 <div class="form-group">
-                <div class="section-title">Jam</div>
+                <div class=" ">Jam</div>
 					<div class="input-group">
 						<div class="input-group-prepend">
 							<div class="input-group-text">
@@ -116,7 +116,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
                 <div class="form-group">					
-                    <div class="section-title">Audio Bell</div>
+                    <div class=" ">Audio Bell</div>
                     <select class="form-control select2" name="audio">
                         <?php foreach($audio as $a) : ?>
                         <option value="<?= $a['id'] ?>"> <?= $a['file_name'] ?> </option>    
@@ -125,7 +125,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
 
                 <div class="form-group">
-                    <div class="section-title">Keterangan</div>
+                    <div class=" ">Keterangan</div>
                     <textarea class="form-control" name="keterangan" placeholder="Keterangan jam untuk apa" cols="30" rows="10"></textarea>
                 </div>
 			</div>
@@ -160,7 +160,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="modal-body">
 				<div class="form-group">	
 					<input type="hidden" name="id" value="<?= $j['id'] ?>">				
-                    <div class="section-title">Hari</div>
+                    <div class=" ">Hari</div>
                     <select class="form-control select2" name="hari">
                         <?php foreach($hari as $h): ?>
                         <option value="<?= $h['id'] ?>" <?= $j['hari'] == $h['hari'] ? 'selected' : '' ?> ><?= $h['hari'] ?></option>
@@ -168,7 +168,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </select>										                                        
                 </div>
                 <div class="form-group">
-                <div class="section-title">Jam</div>
+                <div class=" ">Jam</div>
 					<div class="input-group">
 						<div class="input-group-prepend">
 							<div class="input-group-text">
@@ -184,7 +184,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
                 <div class="form-group">					
-                    <div class="section-title">Audio Bell</div>
+                    <div class=" ">Audio Bell</div>
                     <select class="form-control select2" name="audio">
                         <?php foreach($audio as $a) : ?>
                         <option value="<?= $a['id'] ?>" <?= $j['audio'] == $a['file_name'] ? 'selected' : '' ?> > <?= $a['file_name'] ?> </option>    
@@ -193,7 +193,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
 
                 <div class="form-group">
-                    <div class="section-title">Keterangan</div>
+                    <div class=" ">Keterangan</div>
                     <textarea class="form-control" name="keterangan" placeholder="Keterangan jam untuk apa" cols="30" rows="10"><?= $j['keterangan'] ?></textarea>
                 </div>
 			</div>
