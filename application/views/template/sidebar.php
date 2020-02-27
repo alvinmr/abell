@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<ul class="sidebar-menu">
 			<li class="menu-header">Dashboard</li>
-			<li class="nav-item <?php echo $this->uri->segment(1) == 'dashboard' || ' ' ? 'active' : ''; ?>">
+			<li class="nav-item <?php echo $this->uri->segment(1) == 'dashboard' || $this->uri->segment(1) == '' ? 'active' : ''; ?>">
 				<a href="<?= base_url('dashboard/') ?>" class="nav-link "><i class="fas fa-fire"></i><span>Dashboard</span></a
 				>
 			</li>
@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			<div class="mt-4 mb-4 p-3 hide-sidebar-mini">
 				<a
-					href="http://localhost/abell/tentang"
+					href="<?= base_url('tentang/') ?>"
 					class="btn btn-primary btn-lg btn-block btn-icon-split"
 				>
 					<i class="fas fa-rocket"></i> Tentang Kami

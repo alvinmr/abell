@@ -24,6 +24,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/modules/picker-time/picker.min.css" />		
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/modules/fullcalendar/fullcalendar.min.css" />		
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/modules/fullcalendar/locale/id.js" />		
+  <link rel="stylesheet" href="<?= base_url('assets/css/tentang/') ?>css/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?= base_url('assets/css/tentang/') ?>css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="<?= base_url('assets/css/tentang/') ?>css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="<?= base_url('assets/css/tentang/') ?>css/aos.css">
+  <link rel="stylesheet" href="<?= base_url('assets/css/tentang/') ?>css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="<?= base_url('assets/css/tentang/') ?>css/style.css">
+  <link rel="stylesheet" href="<?= base_url('assets/fonts/tentang/') ?>icomoon/style.css">
+
   <!-- <link href="https://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/> -->
 
   <!-- Template CSS -->

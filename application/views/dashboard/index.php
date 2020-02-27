@@ -29,13 +29,18 @@
                     <div class="col-lg-6 col-md-12 col-sm-12 table-hari">            
                         <div class="card text-center">
                           <div class="card-header">
-                            <h4 style="font-size: 28px;">Jadwal Bell Hari <?= nama_hari(date('Y-m-d')); ?></h4>                           
+                            <h4 style="font-size: 28px;">Jadwal Bell Hari <?= nama_hari(date('Y-m-d')); ?></h4>     
+                            <label class="custom-switch mt-2">
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
+                                <span class="custom-switch-indicator"></span>
+                                <span class="custom-switch-description">ON/OFF</span>
+                              </label>                      
                           </div>
                           <div class="card-body">
         
                           <div class="table-responsive">
                               <table class="table table-bordered" id="table-1">
-                                <thead>
+                                <thead  style=" color: white; background-color: #F1B505;">
                                   <tr>
                                     <th>No</th>
                                     <th>Hari</th>
