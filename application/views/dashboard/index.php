@@ -9,8 +9,8 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-12 col-sm-12">
 						<div class="card p-5 card-welcome">
-							<h2>Hai, Reynaldi Vis Dustin</h2>
-							<p>Selamat Datang di Abell</p>
+								<h2>Hai, Reynaldi Vis Dustin</h2>
+								<p>Selamat Datang di Abell</p>
 						</div>
 					</div>
 
@@ -78,6 +78,23 @@
 		background-position: 105% 55%;
 		background-color: #2274b0;
 		color: white;
+	}
+
+	.card-welcome:before{
+		content:'';
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.144);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+
+	}
+
+	.isi-welcome{
+		position: absolute;
+		z-index: 1;
 	}
 
     .table-hari{
