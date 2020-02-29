@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<ul class="sidebar-menu">
 			<li class="menu-header">Dashboard</li>
-			<li class="nav-item <?php echo $this->uri->segment(1) == '' || 'dashboard' ? 'active' : ''; ?>">
+			<li class="nav-item <?php echo $this->uri->segment(1) == 'dashboard' || ' ' ? 'active' : ''; ?>">
 				<a href="<?= base_url('dashboard/') ?>" class="nav-link "><i class="fas fa-fire"></i><span>Dashboard</span></a
 				>
 			</li>
