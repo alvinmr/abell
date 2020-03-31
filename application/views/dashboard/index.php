@@ -9,7 +9,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <div class="card p-5 card-welcome">
-                            <h2>Hai, Reynaldi Vis Dustin</h2>
+                            <h2>Hai, <?= $this->session->userdata('name') ?></h2>
                             <p>Selamat Datang di Abell</p>
                         </div>
                     </div>
