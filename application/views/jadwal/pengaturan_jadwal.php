@@ -23,15 +23,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="card text-center">
                         <div class="card-header">
                             <h4 style="font-size: 28px;">Pengaturan Jadwal Bell</h4>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#additem">
-                                Add Item
-                            </button>
+
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <form action="<?= base_url("pengaturan_jadwal/deletejadwalBanyak/") ?>" method="post" class="text-left">
+                                <form action="<?= base_url("pengaturan_jadwal/deletejadwalBanyak/") ?>" method="post" class="text-left" id="formID">
                                     <table class="table table-bordered" id="table-1">
-                                        <button type="submit" class="btn btn-danger mb-3">Multiple Delete</button>
+                                        <button type="button" class="btn btn-primary mb-3 mr-3" data-toggle="modal" data-target="#additem">
+                                            Add Item
+                                        </button>
+                                        <button type="submit" class="btn btn-danger mb-3" id="btn-delete">Multiple Delete</button>
 
                                         <thead>
                                             <tr>
@@ -79,11 +80,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $(document).ready(function() { // Ketika halaman sudah siap (sudah selesai di load)
     $("#check-all").click(function() { // Ketika user men-cek checkbox all
         if ($(this).is(":checked")) // Jika checkbox all diceklis
-            $(".check-item").prop("checked",
-                true); // ceklis semua checkbox siswa dengan class "check-item"
+            $(".check-item").prop("checked", true); // ceklis semua checkbox siswa dengan class "check-item"
         else // Jika checkbox all tidak diceklis
-            $(".check-item").prop("checked",
-                false); // un-ceklis semua checkbox siswa dengan class "check-item"
+            $(".check-item").prop("checked", false); // un-ceklis semua checkbox siswa dengan class "check-item"
     });
 
     $("#btn-delete").click(function() { // Ketika user mengklik tombol delete
@@ -93,6 +92,7 @@ $(document).ready(function() { // Ketika halaman sudah siap (sudah selesai di lo
         if (confirm) // Jika user mengklik tombol "Ok"
             $("#form-delete").submit(); // Submit form
     });
+
 });
 </script>
 

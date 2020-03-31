@@ -9,6 +9,8 @@ class Pengaturan_jadwal_model extends CI_Model {
         $this->db->select('jadwal.*, hari.hari as hari, audio.file_name as audio');        
         $this->db->join('hari', 'hari.id = jadwal.hari', 'left');    
         $this->db->join('audio', 'audio.id = jadwal.audio', 'left');
+        $this->db->order_by('hari.hari DESC');
+        $this->db->order_by('jam ASC');
         return $this->db->get($this->_table)->result_array();        
     }
 
