@@ -7,6 +7,7 @@ class Auth extends CI_Controller
     {
         parent::__construct();
         $this->load->library('form_validation');
+        // is_logged_in();
     }
     
     public function index()
@@ -54,8 +55,8 @@ class Auth extends CI_Controller
 
     public function logout()
     {
+        $this->session->unset_userdata('name');
         $this->session->unset_userdata('email');
-        $this->session->unset_userdata('password');
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">You Have Been Logout!</div>');
         redirect('auth');
     }

@@ -32,3 +32,10 @@ function nama_hari($tanggal){
         else if($nama=="Saturday") {$nama_hari="Sabtu";}
         return $nama_hari;
     }
+
+    function is_logged_in(){
+        $ci = get_instance();
+        if(!$ci->session->userdata('email')){
+            redirect('auth');
+        }
+    }

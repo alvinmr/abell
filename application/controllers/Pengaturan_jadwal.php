@@ -7,6 +7,7 @@ class Pengaturan_jadwal extends CI_Controller {
 	{
 		parent::__construct();		
 		$this->load->model('pengaturan_jadwal_model');	
+		is_logged_in();
 	}
 
     public function index(){
