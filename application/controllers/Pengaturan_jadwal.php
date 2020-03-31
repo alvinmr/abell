@@ -76,6 +76,21 @@ class Pengaturan_jadwal extends CI_Controller {
 		</div>');
 		redirect('pengaturan_jadwal');
 	}
+
+	public function deletejadwalBanyak(){
+		$id = $this->input->post('id');
+		if($id == ''){
+			$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
+			Tidak ada jadwal yang dipilih!
+			</div>');
+			redirect('pengaturan_jadwal');
+		}
+		$this->pengaturan_jadwal_model->delete($id);
+		$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
+		Jadwal berhasil diahpus!
+		</div>');
+		redirect('pengaturan_jadwal');
+	}
 }
 
 /* End of file Pengaturan_model.php */

@@ -29,7 +29,8 @@ class Pengaturan_jadwal_model extends CI_Model {
     }
 
     public function delete($id){
-        return $this->db->delete($this->_table,['id' => $id]);    
+        $this->db->where_in('id', $id);
+        $this->db->delete($this->_table);    
     }
 
     public function edit($id,$hari,$jam,$audio,$keterangan)
