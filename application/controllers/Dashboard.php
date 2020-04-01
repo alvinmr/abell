@@ -6,7 +6,8 @@ class Dashboard extends CI_Controller {
     public function __construct()
 	{
 		parent::__construct();
-		$this->load->helper('format');
+        $this->load->helper('format');
+        is_logged_in();
 	}
     public function index()
     {

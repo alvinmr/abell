@@ -7,6 +7,7 @@ class Jadwal extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->helper('format');
+		is_logged_in();
 	}
 	
 
