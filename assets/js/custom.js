@@ -25,7 +25,9 @@ $(".custom-file-input").on("change", function() {
 });
 
 // Datatables 1
-$("#table-1").DataTable({});
+$("#table-1").DataTable({
+	ordering: false
+});
 
 // Picker
 new Picker(document.querySelector(".js-time-picker"), {
