@@ -81,7 +81,6 @@
     color: white;
 }
 
-<<<<<<< HEAD
 	.card-welcome:before{
 		content:'';
 		position: absolute;
@@ -101,10 +100,6 @@
 
     .table-hari{
         margin-top: -32%;
-=======
-.table-hari {
-    margin-top: -32%;
->>>>>>> 569c41d56ad2e982f29f2b985eeb2fe3502efc8c
 
 }
 
