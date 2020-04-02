@@ -28,12 +28,3 @@ $(".custom-file-input").on("change", function() {
 $("#table-1").DataTable({
 	ordering: false
 });
-
-// Picker
-new Picker(document.querySelector(".js-time-picker"), {
-	format: "HH:mm",
-	headers: true,
-	text: {
-		title: "Pilih waktu"
-	}
-});
