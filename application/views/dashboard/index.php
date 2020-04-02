@@ -33,8 +33,8 @@
                             </div>
                             <div class="card-body">
 
-                                <div class="table-responsive text-left">
-                                    <table class="table table-bordered" id="table-1">
+                                <div class="table-responsive text-left ">
+                                    <table class="table table-bordered" style="border-radius: 1em;" id="table-1">
                                         <thead style=" color: white; background-color: #F1B505;">
                                             <tr>
                                                 <th>No</th>
@@ -52,7 +52,7 @@
                                                 <td><?= $i ?></td>
                                                 <td><?= $j['hari'] ?></td>
                                                 <td style="font-weight: bold;"><?= date('H:i',strtotime($j['jam'])) ?></td>
-                                                <td><?= $j['audio'] ?></td>
+                                                <td><?= $j['audio'] ? $j['audio'] : 'Tidak ada audio' ?></td>
                                                 <td><?= $j['keterangan'] ?></td>
                                             </tr>
                                             <?php endforeach; ?>

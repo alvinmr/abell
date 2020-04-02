@@ -56,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <td style="font-weight: bold;">
                                                     <?= date('H:i',strtotime($j['jam'])) ?>
                                                 </td>
-                                                <td><?= $j['audio'] ?></td>
+                                                <td><?= $j['audio'] ? $j['audio'] : 'Tidak ada audio' ?></td>
                                                 <td><?= $j['keterangan'] ?></td>
                                                 <td>
                                                     <a href="" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modaledit<?= $j['id'] ?>"> <i class="fas fa-edit"></i> </a>
@@ -129,7 +129,7 @@ $(document).ready(function() { // Ketika halaman sudah siap (sudah selesai di lo
                     <div class=" ">Audio Bell</div>
                     <select class="form-control select2" name="audio">
                         <?php foreach($audio as $a) : ?>
-                        <option value="<?= $a['id'] ?>"> <?= $a['file_name'] ?> </option>
+                        <option value="<?= $a['id'] ?>"> <?= $a['id'] ? $a['file_name'] : 'Tidak ada audio' ?> </option>
                         <?php endforeach; ?>
                     </select>
                 </div>
@@ -184,9 +184,12 @@ $(document).ready(function() { // Ketika halaman sudah siap (sudah selesai di lo
                 <div class="form-group">
                     <div class=" ">Audio Bell</div>
                     <select class="form-control select2" name="audio">
+                        <?php if(!$audio){ ?>
+                            <option value="">Tidak Ada Audio</option>
+                        <?php } ?>
                         <?php foreach($audio as $a) : ?>
                         <option value="<?= $a['id'] ?>" <?= $j['audio'] == $a['file_name'] ? 'selected' : '' ?>> <?= $a['file_name'] ?>
-                        </option>
+                        </option>                        
                         <?php endforeach; ?>
                     </select>
                 </div>
