@@ -178,7 +178,7 @@ $(document).ready(function() { // Ketika halaman sudah siap (sudah selesai di lo
                                 <i class="fas fa-clock"></i>
                             </div>
                         </div>
-                        <input type="text" class="form-control js-time-picker-edit" value="<?= date('H:i',strtotime($j['jam'])) ?>" name="jam" />
+                        <input type="text" class="form-control js-time-picker" value="<?= date('H:i',strtotime($j['jam'])) ?>" name="jam" />
                     </div>
                 </div>
                 <div class="form-group">
@@ -216,7 +216,7 @@ $(document).ready(function() { // Ketika halaman sudah siap (sudah selesai di lo
 
 <script>
 // Picker
-new Picker(document.querySelector(".js-time-picker"), document.querySelector(".js-time-picker-edit"), {
+new Picker(document.querySelector(".js-time-picker")), {
     controls: true,
 	format: "HH:mm",
 	headers: true,
