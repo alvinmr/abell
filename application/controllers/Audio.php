@@ -34,10 +34,10 @@ class Audio extends CI_Controller {
             $this->audio_model->AudioInsertdata($data);
         }else{
             var_dump($this->upload->display_errors());   
-            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
-            Audio Tidak ada!
-            </div>');
-            redirect('audio'); 
+            // $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
+            // Audio Tidak ada!
+            // </div>');
+            // redirect('audio'); 
         }
         
     }
