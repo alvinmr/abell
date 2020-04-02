@@ -2,6 +2,7 @@
     <div class="section">
         <div class="section-header">
             <h1>Dashboard</h1>
+            <div id="jam" class="d-none"></div>
         </div>
 
         <div class="section-body">

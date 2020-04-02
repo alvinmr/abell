@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   gtag('config', 'UA-94034622-3');
 
-  function jam() {
+  function jam() {    
 	document.getElementById("jam").innerHTML =
 		"Waktu : " +
 		moment()
