@@ -216,7 +216,7 @@ $(document).ready(function() { // Ketika halaman sudah siap (sudah selesai di lo
 
 <script>
 // Picker
-new Picker(document.querySelector(".js-time-picker", document.querySelector(".js-time-picker-edit"), {
+new Picker(document.querySelector(".js-time-picker"), document.querySelector(".js-time-picker-edit"), {
     controls: true,
 	format: "HH:mm",
 	headers: true,
