@@ -32,7 +32,8 @@ class Audio extends CI_Controller {
         if ($this->upload->do_upload('audio_file')) {            
             $data = array("file_name"=> $this->upload->data("file_name"));
             $this->audio_model->AudioInsertdata($data);
-        }else{            
+        }else{
+            var_dump($this->upload->display_errors());   
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">
             Audio Tidak ada!
             </div>');
